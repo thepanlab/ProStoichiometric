@@ -68,7 +68,7 @@ a= [0, 4, 0, 2, -4, 0; %H2
     0, 0, 1, 0, 0, 0; %Ethanol
     2, 0, 0, -1, 0, 0; %Lactate
     0, 2, 1, 1, 0, -1; %Acetate
-    2, 4, 3, 5, 1, 1]; %APT
+    2, 4, 3, 1, 1, 1]; %APT
    % -1, -1, -1, -1, 0, 0;]; %Glucose
 
 l=size(a,1);
@@ -101,20 +101,20 @@ for c=1:8
 
       R(rep)=goodnessOfFit(p(7,:)',cm(7,:)','NRMSE');
 
-      %subplot(2,4,j);plot(1:7,cm(i-6:i,1),':r', 1:7,cm(i-6:i,2),':g',1:7,cm(i-6:i,3),':k',1:7,cm(i-6:i,4),'--r',1:7,cm(i-6:i,5),'--b', 1:7,cm(i-6:i,6), '--g', 'LineWidth', 2);
-      %hold on; 
-      %plot(1:7,p(i-6:i,1),'*r', 1:7,p(i-6:i,2),'*g',1:7,p(i-6:i,3),'*k',1:7,p(i-6:i,4),'or',1:7,p(i-6:i,5),'ob', 1:7,p(i-6:i,6),'og')
+      subplot(2,4,j);plot(1:7,cm(i-6:i,1),':r', 1:7,cm(i-6:i,2),':g',1:7,cm(i-6:i,3),':k',1:7,cm(i-6:i,4),'--r',1:7,cm(i-6:i,5),'--b', 1:7,cm(i-6:i,6), '--g', 'LineWidth', 2);
+      hold on; 
+      plot(1:7,p(i-6:i,1),'*r', 1:7,p(i-6:i,2),'*g',1:7,p(i-6:i,3),'*k',1:7,p(i-6:i,4),'or',1:7,p(i-6:i,5),'ob', 1:7,p(i-6:i,6),'og')
       
-      subplot(2,4,j);plot([1:7],sol2(1,i-6:i),':r',[1:7],sol2(2,i-6:i),':b',[1:7],sol2(3,i-6:i),':g',[1:7],sol2(4,i-6:i),':k',[1:7],sol2(5,i-6:i),'--r',[1:7],sol2(6,i-6:i),'--b','LineWidth', 2);
-      hold on;
+      %subplot(2,4,j);plot([1:7],sol2(1,i-6:i),':r',[1:7],sol2(2,i-6:i),':b',[1:7],sol2(3,i-6:i),':g',[1:7],sol2(4,i-6:i),':k',[1:7],sol2(5,i-6:i),'--r',[1:7],sol2(6,i-6:i),'--b','LineWidth', 2);
+      %hold on;
 
       axis([0 6 0 3]);
       xlabel('Days'); ylabel('Flux (mmoles)'); title({t{c};['NRMSE ' num2str(round(mean(R),3)) ' +/- ' num2str(round(std(R),3))]});
      end
 
     if c==1
-    %legend({'H2', 'CH4','Ethanol','lactate','acetate','Biomass'});
-  legend({'lactate fermentation', 'hydrogenic acetogenesis', 'ethanol/acetate', 'Hydrogenic lactate oxidation','hydrogenic methanogenesis', 'acetoclastic methanogenesis'})
+    legend({'H2', 'CH4','Ethanol','lactate','acetate','Biomass'});
+  %legend({'lactate fermentation', 'hydrogenic acetogenesis', 'ethanol/acetate', 'Hydrogenic lactate oxidation','hydrogenic methanogenesis', 'acetoclastic methanogenesis'})
   
 end
 end
