@@ -62,14 +62,14 @@ col=colormap(hsv(8));
 
 t={'Rc', 'Rc&Mc', 'Rc&Mh', 'Rc&Dv', 'Rc&Mc&Mh', 'Rc&Mc&Dv', 'Rc&Mh&Dv', 'Rc&Mc&Mh&Dv'};
 
-a= [0, 4, 0, 2, -4, 0; %H2
+a= [0, 4, 2, 2, -4, 0; %H2
    % 0, 2, 2, 1, -1, 1; %CO2
     0, 0, 0, 0, 1, 1; %CH4
     0, 0, 1, 0, 0, 0; %Ethanol
     2, 0, 0, -1, 0, 0; %Lactate
     0, 2, 1, 1, 0, -1; %Acetate
     2, 4, 3, 1, 1, 1]; %APT
-   % -1, -1, -1, -1, 0, 0;]; %Glucose
+    -1, -1, -1, 0, 0, 0;]; %Glucose
 
 l=size(a,1);
 for c=1:8
