@@ -1,0 +1,20 @@
+medium	compound	description	name
+vm	k	vm medium	K+
+vm	h	vm medium	H+
+vm	h2o	vm medium	H2O
+vm	pi	vm medium	Phosphate
+vm	urea	vm medium	Urea CH4N2O
+vm	mg2	vm medium	Mg
+vm	cl	vm medium	Cl-
+vm	ca2	vm medium	Ca2+
+vm	fe2	vm medium	Fe2+
+vm	mops	vm medium	MOPS C7H14NO4S
+vm	cys__L	vm medium	L-Cysteine
+vm	b14glucan	vm medium	"Cellulose (beta-1,4-glucan)"
+vm	cellb	vm medium	Cellobiose
+vm	glc__D	vm medium	D-Glucose
+vm	ac_c	vm medium	Acetate
+vm	lac__L	vm medium	L-Lactate
+vm	lac__D	vm medium	D-Lactate
+vm	etoh_c	vm medium	Ethanol
+vm	na1	vm medium	Na+
