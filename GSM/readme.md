@@ -11,5 +11,7 @@ gapfill SPECIES_model.xml -m medium.tsv -o NEW_SPECIES_model.xml
 ```
 ### Microbial Communities  
 ```
-merge_community NEW_SPECIES_model_1.xml NEW_SPECIES_model_2.xml NEW_SPECIES_model_3.xml -o Tri-culture_community.xml --mediadb medium.tsv
+merge_community NEW_SPECIES_model_1.xml NEW_SPECIES_model_2.xml NEW_SPECIES_model_3.xml \
+                -o Tri-culture_community.xml \
+                --mediadb medium.tsv
 ```
