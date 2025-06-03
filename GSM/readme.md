@@ -15,3 +15,11 @@ merge_community NEW_SPECIES_model_1.xml NEW_SPECIES_model_2.xml NEW_SPECIES_mode
                 -o Tri-culture_community.xml \
                 --mediadb medium.tsv
 ```
+## Calculate the interaction potential by smetana  
+module load Python/3.7.6-foss-2019a
+### Global mode  
+```
+smetana -d /PATH2MODEL/Tri-culture_community.xml \
+        --mediadb medium.tsv \
+        -o OUTPUT_global.tsv
+```
