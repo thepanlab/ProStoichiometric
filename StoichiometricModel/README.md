@@ -11,5 +11,6 @@ A Protein-Abundance Weighted, ATP-Scaled Stoichiometric Model for Estimating Spe
 ## Collect Metaproteomic Data  
 * Identify marker proteins corresponding to each metabolic reaction via metaproteomics.
 * Quantify the relative abundances of these proteins to infer which species are active in each pathway.
-
-
+## Fit Model to Measured Metabolite Data  
+* Use the constructed reaction set and protein-based scaling to predict metabolite concentrations.
+* Compare predicted values with measured levels to evaluate model fit.
